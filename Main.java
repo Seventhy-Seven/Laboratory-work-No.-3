@@ -1,0 +1,21 @@
+package arrays;
+
+class project7 {
+    public static void main(String[] args) {
+        int n = 10;
+        char[] array = new char[n];
+        char b = 'a';
+
+        for (int i = 0; i < array.length; i++)
+        {
+            array[i] = b;
+            b+=2;
+            System.out.print(array[i] + "\t");
+        }
+
+        System.out.println();
+        for (int i = array.length - 1 ; i >= 0; i--){
+            System.out.print(array[i] + "\t");
+        }
+    }
+}
