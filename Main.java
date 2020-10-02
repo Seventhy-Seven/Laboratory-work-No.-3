@@ -1,0 +1,24 @@
+package com.company;
+
+import java.util.Scanner;
+
+class project5 {
+    public static void main(String[]args){
+        System.out.print("Введите количество чисел в сумме: ");
+        Scanner InCD = new Scanner(System.in);
+        int a = InCD.nextInt();
+        int b = 0;
+        int c=0;
+        int i=1;
+
+        for (i=0;i<a;i++)
+        {
+            if(i%5==2) b+=1;c+=b;
+            System.out.println ("Остаток 2 " + c + " ");}
+
+        for (i=0; i<a; i++)
+        {
+            if(i%3==1) b+=1;c+=b;
+            System.out.println("Остаток 1 " + c + " ");}
+    }
+}
